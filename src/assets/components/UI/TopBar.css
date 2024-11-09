@@ -1,0 +1,66 @@
+/* Estilos generales para TopBar */
+.topBar {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  font-family: "Epilogue", sans-serif;
+}
+
+/* Estilos para desktop */
+@media (min-width: 768px) {
+  .topBar {
+    flex-direction: row;
+    justify-content: center;
+    height: 50px;
+  }
+
+  .linksContainer {
+    display: flex;
+    gap: 30px; /* Más espacio entre enlaces en desktop */
+  }
+
+  button {
+    font-size: 18px;
+  }
+}
+
+/* Estilos para móvil */
+@media (max-width: 767px) {
+  .topBar {
+    flex-direction: column;
+    height: 150px;
+  }
+
+  .linksContainer {
+    display: flex;
+    flex-direction: row; /* Alinear enlaces en fila en móvil */
+    align-items: center;
+  }
+
+  button {
+    font-size: 16px;
+  }
+}
+
+/* Estilos comunes para los botones */
+button {
+  font-family: "Epilogue", sans-serif;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+button:hover {
+  text-decoration: underline;
+} 
+
+/* Enlaces de color blanco */
+.topBar a {
+  color: white;
+  text-decoration: none;
+}
+
+.topBar a:hover {
+  color: white; /* Mantiene el color blanco en hover */
+}

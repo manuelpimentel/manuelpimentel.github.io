@@ -1,0 +1,326 @@
+/* Estilos Generales */
+body {
+  font-family: 'Epilogue', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+.kau-font {
+  font-family: 'Righteous', sans-serif;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.hero-text {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 6rem; /* Usando rem en lugar de px */
+  color: white;
+  text-align: center;
+  font-family: 'Righteous', sans-serif;
+  z-index: 2;
+}
+
+.section-title {
+  font-size: medium;
+  margin: 0;
+}
+
+/* TopBar */
+.topBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  padding: 1rem 0;
+}
+
+/* About Section */
+.about-section {
+  padding: 2rem;
+  padding-bottom: 0;
+  text-align: center;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem; /* Uso de rem para el espaciado */
+}
+
+.about-text {
+
+  text-align: left;
+  color: black;
+}
+
+#title {
+  font-size: x-large;
+  margin-bottom: 0;
+}
+
+#paragraph1 {
+  font-size: large;
+}
+
+#paragraph4 {
+  font-size: x-large;
+  text-align: center;
+}
+
+.about-image {
+  width: 15rem; /* Tamaño de imagen ajustado en rem */
+  height: auto;
+}
+
+/* Contact Button */
+.contact-button {
+  margin-top: 0rem;
+  padding: 0.5rem 2rem;
+  background-color: #000;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 100%; /* Botón ocupa todo el ancho en móviles */
+}
+
+/* Values Section */
+.values-section {
+  padding: 2rem;
+  text-align: center;
+}
+
+.values-grid {
+  display: flex;
+  flex-direction: column; /* Cambia a columna en dispositivos móviles */
+  justify-content: space-around;
+}
+
+.value-box {
+  width: 100%; /* Ocupa el 100% del ancho en dispositivos móviles */
+  margin: 1rem 0;
+  text-align: center;
+}
+
+/* Purpose Section */
+.purpose-section {
+  padding: 2rem;
+  background-color: #f5f5f5;
+}
+
+.mission-vision {
+  display: flex;
+  flex-direction: column;
+}
+
+.mission,
+.vision {
+  background: white;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+
+/* Join Section */
+.join-section {
+  padding: 2rem;
+  text-align: center;
+}
+
+.myImage3 {
+  display: block;
+  margin: auto;
+  width: 25rem; /* Ajustando en rem */
+  height: auto;
+  border-radius: 1rem;
+}
+
+/* Experience Section */
+.experience-section {
+  background-color: rgb(0, 0, 0);
+  padding: 2rem;
+  text-align: center;
+}
+
+.experience-section h2 {
+  color: white;
+}
+
+.experience-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 2rem;
+}
+
+.experience-icons a {
+  color: white; /* Mantén los iconos en color blanco */
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+.experience-icons a:hover {
+  color: white; /* Asegura que el color siga siendo blanco al hacer hover */
+}
+
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+  .hero-text {
+    font-size: 8rem; /* Reducir el tamaño de la fuente en móvil */
+  }
+
+  .hero-image{
+    width: 100%;
+  }
+
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem; /* Ajustar el espaciado */
+  }
+
+  .about-text{
+    flex: 1;
+  }
+
+  .about-image {
+    width: 100%; /* Ajusta el tamaño de la imagen en móvil */
+    border-radius: 1rem;
+  }
+
+  .values-grid {
+    flex-direction: column;
+  }
+
+  .value-box {
+    width: 100%;
+  }
+
+  .mission-vision {
+    flex-direction: column;
+  }
+
+  .experience-icons {
+    font-size: 1.5rem;
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 768px) {
+  .hero {
+    height: 80vh;
+  }
+
+  .hero-text {
+    font-size: 10rem; /* Ajuste en rem */
+  }
+
+  .about-section{
+    padding: 2rem;
+  }
+
+  .second-section{
+    padding-left: 15rem;
+    padding-right: 15rem;
+  }
+
+  .about-content {
+    display: flex;
+    flex-direction: row; /* Los pone en fila en pantallas pequeñas */
+    align-items: center;
+    gap: 2rem;
+    padding-top: 2rem;
+    align-items: start;
+    justify-content: center;
+  }
+
+  #title{
+    font-size: xx-large;
+    margin-top: 0;
+  }
+
+  #paragraph1{
+    font-size: 1.5rem;
+  }
+  #paragraph2{
+    font-size: 1.5rem;
+  }
+  #paragraph3{
+    font-size: 1.5rem;
+  }
+
+  #paragraph4{
+   text-align: left;
+   font-weight:bold;
+  }
+
+  .about-text {
+    max-width: 50%; /* Ocupa el 50% del ancho */
+    text-align: left;
+    color: black;
+  }
+
+.contact-button{
+  width: 15rem;
+  height: 3rem;
+  border-radius: 5rem;
+}
+
+  .about-image {
+    width: 30rem;
+    height: auto;
+    border-radius: 1rem;
+  }
+
+  .values-grid {
+    flex-direction: row;
+    gap: 4rem; /* Ajuste en rem */
+  }
+
+  .value-box {
+    width: 25%;
+  }
+
+  .mission-vision {
+    flex-direction: row;
+  }
+  #paragraph5{
+    font-size: x-large;
+    text-align: center;
+
+  }
+
+  .myImage3{
+    width: 75rem;
+    margin-top: 2rem;
+  }
+
+  .experience-icons {
+    font-size: 2.5rem;
+  }
+}
