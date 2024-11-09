@@ -30,7 +30,11 @@ function App() {
   }, []);
 
   const handleButton = () => {
-    window.open("https://www.instagram.com/direct/t/17842961133339953/#", "_blank");
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    const url = isMobile
+      ? "https://www.instagram.com/somos.kau/"
+      : "https://www.instagram.com/direct/t/17842961133339953/#";
+    window.open(url, "_blank");
   };
 
   return (
@@ -155,7 +159,7 @@ function App() {
           {/* Formulario de HubSpot */}
           <div id="hubspot-form-container"></div>
 
-          <button className="contact-button">Contáctanos</button>
+          <button className="contact-button" onClick={handleButton}>Contáctanos</button>
         </div >
       </div>
 
