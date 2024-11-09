@@ -29,6 +29,10 @@ function App() {
     document.body.appendChild(script);
   }, []);
 
+  const handleButton = () => {
+    window.open("https://www.instagram.com/direct/t/17842961133339953/#", "_blank");
+  };
+
   return (
     <>
       {/* Primer div - Imagen de fondo con texto "KAU" */}
@@ -57,7 +61,7 @@ function App() {
             </p>
             <div>
               <p id="paragraph4">¡Únete y forma parte de esta aventura transformadora!</p>
-              <button className="contact-button">Contáctanos</button>
+              <button className="contact-button" onClick={handleButton} >Contáctanos</button>
             </div>
           </div>
           <div>
