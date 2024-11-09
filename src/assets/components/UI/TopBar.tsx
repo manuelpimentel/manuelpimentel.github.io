@@ -18,9 +18,9 @@ const TopBar: React.FC<TopBarProps> = () => {
   return (
     <div className="topBar">
       <div className="linksContainer">
-        <a href="#home">
+        {/*<a href="#home">
           <img src="public/logo.svg" alt="Home Icon" className="homeIcon"/>
-        </a>
+        </a>*/}
         <a href="#nosotros">Nosotros</a>
         <a href="#principios">Principios</a>
         <a href="#contactanos">Acompáñanos</a>
