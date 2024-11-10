@@ -1,5 +1,5 @@
 import "./App.css";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import TopBar from "./assets/components/UI/TopBar"; // Asegúrate de que la ruta sea correcta
 import myImage from "./assets/images/Roraima.jpg";
 import myImage2 from "./assets/images/Door.jpeg";
@@ -11,10 +11,13 @@ import { GrMapLocation } from "react-icons/gr";
 import { FaFacebook } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { FaLinkedin } from "react-icons/fa";
-import { initializeAnalytics, logPageView, logButtonClick } from "./utils/analytics";
+import {
+  initializeAnalytics,
+  logPageView,
+  logButtonClick,
+} from "./utils/analytics";
 
 function App() {
-
   useEffect(() => {
     const link = document.createElement("link");
     link.href =
