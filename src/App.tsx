@@ -11,7 +11,7 @@ import { GrMapLocation } from "react-icons/gr";
 import { FaFacebook } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { FaLinkedin } from "react-icons/fa";
-import { initializeAnalytics, logPageView } from "./utils/analytics";
+import { initializeAnalytics, logPageView, logButtonClick } from "./utils/analytics";
 
 function App() {
 
@@ -37,12 +37,13 @@ function App() {
     logPageView("/home");
   }, []);
 
-  const handleButton = () => {
+  const handleContactButton = () => {
     const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
     const url = isMobile
       ? "https://www.instagram.com/somos.kau/"
       : "https://www.instagram.com/direct/t/17842961133339953/#";
     window.open(url, "_blank");
+    logButtonClick("contactButton");
   };
 
   return (
@@ -89,7 +90,7 @@ function App() {
               <p id="paragraph4">
                 ¡Únete y forma parte de esta aventura transformadora!
               </p>
-              <button className="contact-button" onClick={handleButton}>
+              <button className="contact-button" onClick={handleContactButton}>
                 Contáctanos
               </button>
             </div>
@@ -209,7 +210,7 @@ function App() {
           {/* Formulario de HubSpot */}
           <div id="hubspot-form-container"></div>
 
-          <button className="contact-button" onClick={handleButton}>
+          <button className="contact-button" onClick={handleContactButton}>
             Contáctanos
           </button>
         </div>

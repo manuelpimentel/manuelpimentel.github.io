@@ -9,4 +9,12 @@ export const initializeAnalytics = () => {
 
 export const logPageView = (path: string) => {
   ReactGA.send({ hitType: "pageview", page: path });
+};  
+
+export const logButtonClick = (buttonName: string) => {
+  ReactGA.event({
+    category: "Button",
+    action: "Click",
+    label: buttonName,
+  });
 };
