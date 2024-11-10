@@ -14,7 +14,6 @@ import { FaLinkedin } from "react-icons/fa";
 import { initializeAnalytics, logPageView } from "./utils/analytics";
 
 function App() {
-  const [path, setPath] = useState("/home");
 
   useEffect(() => {
     const link = document.createElement("link");
@@ -35,7 +34,7 @@ function App() {
 
   useEffect(() => {
     initializeAnalytics();
-    logPageView(path);
+    logPageView("/home");
   }, []);
 
   const handleButton = () => {
