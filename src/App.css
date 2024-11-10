@@ -1,9 +1,9 @@
-/* Estilos Generales */
 body {
   font-family: 'Epilogue', sans-serif;
   margin: 0;
   padding: 0;
   color: black;
+  overflow-x: hidden;
 }
 
 .kau-font {
@@ -74,7 +74,6 @@ body {
 }
 
 .about-text {
-
   text-align: left;
   color: black;
 }
@@ -187,14 +186,13 @@ body {
   color: white; /* Asegura que el color siga siendo blanco al hacer hover */
 }
 
-
 /* Mobile Styles */
 @media (max-width: 767px) {
   .hero-text {
     font-size: 8rem; /* Reducir el tamaño de la fuente en móvil */
   }
 
-  .hero-image{
+  .hero-image {
     width: 100%;
   }
 
@@ -204,7 +202,7 @@ body {
     gap: 2rem; /* Ajustar el espaciado */
   }
 
-  .about-text{
+  .about-text {
     flex: 1;
   }
 
@@ -225,13 +223,76 @@ body {
     flex-direction: column;
   }
 
+  .myImage3{
+    border-radius: 0;
+  }
+
   .experience-icons {
     font-size: 1.5rem;
   }
+  
+  #paragraph5 {
+    font-size: x-large;
+    text-align: center;
+  }
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* ... otros estilos ... */
+
+  .container {
+    max-width: 90%; /* Ajusta el ancho máximo según tus necesidades */
+    margin: 0 auto;
+  }
+
+
+  .about-image {
+    width: 100%; /* Ajusta el tamaño de la imagen en móvil */
+    height: auto;
+    border-radius: 1rem;
+  }
+
+  .elemento {
+    width: 33.33%; /* Ajusta el ancho para distribuir los elementos de forma equitativa */
+    flex: 0 0 auto; /* Evita que los elementos se estiren más de lo necesario */
+  }
+
+  /* Ajusta el tamaño de las fuentes y las imágenes según sea necesario */
+  h2, h3, p {
+    font-size: 1.2rem; /* Ajusta el tamaño de la fuente */
+  }
+
+  img {
+    max-width: 100%; /* Asegúrate de que las imágenes no superen el ancho del contenedor */
+  }
+
+  .about-text {
+    max-width: 50%;
+    text-align: left;
+    color: black;
+  }
+
+  .myImage3 {
+    width: 75rem;
+    margin-top: 2rem;
+    border-radius: 0;
+  }
+
+  
+
+  .contact-button {
+    width: 15rem;
+    height: 3rem;
+    border-radius: 5rem;
+  }
+
+  #paragraph5 {
+    font-size: x-large;
+    text-align: center;
+  }
+}
 /* Desktop Styles */
-@media (min-width: 768px) {
+@media (min-width: 1025px) {
   .hero {
     height: 80vh;
   }
@@ -240,18 +301,13 @@ body {
     font-size: 10rem; /* Ajuste en rem */
   }
 
-  .about-section{
+  .about-section {
     padding: 2rem;
   }
-
-  .second-section{
-    padding-left: 15rem;
-    padding-right: 15rem;
-  }
-
+  
   .about-content {
     display: flex;
-    flex-direction: row; /* Los pone en fila en pantallas pequeñas */
+    flex-direction: row;
     align-items: center;
     gap: 2rem;
     padding-top: 2rem;
@@ -259,37 +315,33 @@ body {
     justify-content: center;
   }
 
-  #title{
+  #title {
     font-size: xx-large;
     margin-top: 0;
   }
 
-  #paragraph1{
-    font-size: 1.5rem;
-  }
-  #paragraph2{
-    font-size: 1.5rem;
-  }
-  #paragraph3{
+  #paragraph1,
+  #paragraph2,
+  #paragraph3 {
     font-size: 1.5rem;
   }
 
-  #paragraph4{
-   text-align: left;
-   font-weight:bold;
+  #paragraph4 {
+    text-align: left;
+    font-weight: bold;
   }
 
   .about-text {
-    max-width: 50%; /* Ocupa el 50% del ancho */
+    max-width: 50%;
     text-align: left;
     color: black;
   }
 
-.contact-button{
-  width: 15rem;
-  height: 3rem;
-  border-radius: 5rem;
-}
+  .contact-button {
+    width: 15rem;
+    height: 3rem;
+    border-radius: 5rem;
+  }
 
   .about-image {
     width: 30rem;
@@ -299,7 +351,7 @@ body {
 
   .values-grid {
     flex-direction: row;
-    gap: 4rem; /* Ajuste en rem */
+    gap: 4rem;
   }
 
   .value-box {
@@ -309,13 +361,13 @@ body {
   .mission-vision {
     flex-direction: row;
   }
-  #paragraph5{
+
+  #paragraph5 {
     font-size: x-large;
     text-align: center;
-
   }
 
-  .myImage3{
+  .myImage3 {
     width: 75rem;
     margin-top: 2rem;
   }
