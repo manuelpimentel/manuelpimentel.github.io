@@ -1,5 +1,5 @@
 import "./App.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import TopBar from "./assets/components/UI/TopBar"; // Asegúrate de que la ruta sea correcta
 import myImage from "./assets/images/Roraima.jpg";
 import myImage1 from "./assets/images/KAU.png";
@@ -19,6 +19,8 @@ import {
 } from "./utils/analytics";
 
 function App() {
+  const [currentPath, setCurrentPath] = useState("/");
+
   useEffect(() => {
     const link = document.createElement("link");
     link.href =
@@ -38,8 +40,8 @@ function App() {
 
   useEffect(() => {
     initializeAnalytics();
-    logPageView("/home");
-  }, []);
+    logPageView(currentPath);
+  }, [currentPath]);
 
   const handleContactButton = () => {
     const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
@@ -54,7 +56,7 @@ function App() {
     <>
       {/* Primer div - Imagen de fondo con texto "KAU" */}
       <div className="hero">
-        <TopBar /> {/* Aquí agregamos el TopBar */}
+        <TopBar onSectionChange={setCurrentPath} /> {/* Aquí agregamos el TopBar */}
         <img src={myImage} alt="Fondo" className="hero-image" />
         <img src={myImage1} alt="Fondo" className="hero-imagetitle" />
       </div>

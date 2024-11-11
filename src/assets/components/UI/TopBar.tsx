@@ -1,11 +1,15 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./TopBar.css";
 
-interface TopBarProps {}
+interface TopBarProps {
+  onSectionChange?: (section: string) => void;
+}
 
-const TopBar: React.FC<TopBarProps> = () => {
+
+const TopBar: React.FC<TopBarProps> = (props) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const topBarRef = useRef(null);
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,9 +29,9 @@ const TopBar: React.FC<TopBarProps> = () => {
         {/*<a href="#home">
           <img src="public/logo.svg" alt="Home Icon" className="homeIcon"/>
         </a>*/}
-        <a href="#nosotros">Nosotros</a>
-        <a href="#principios">Principios</a>
-        <a href="#contactanos">Acompáñanos</a>
+        <a href="#nosotros" onClick={() => props?.onSectionChange?.('us')} >Nosotros</a>
+        <a href="#principios" onClick={() => props?.onSectionChange?.('values')}>Principios</a>
+        <a href="#contactanos" onClick={() => props?.onSectionChange?.('contact')}>Acompáñanos</a>
       </div>
     </div>
   );
