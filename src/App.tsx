@@ -107,7 +107,7 @@ function App() {
         </div>
       </section>
       <div className="second-section">
-        
+
 
         {/* Tercer div - Valores */}
         <div className="values-section">
@@ -183,12 +183,13 @@ function App() {
             "Queremos promover un turismo que beneficie tanto a los turistas
             como a las comunidades que los acogen."
           </p>
+          <div>
+            <img src={myImage3} alt="Fondo" className="myImage3" />
+          </div>
         </div>
 
         {/* Quinto div - myImage2 */}
-        <div>
-          <img src={myImage3} alt="Fondo" className="myImage3" />
-        </div>
+
 
         {/* Sexto div - Acompañanos */}
         <div className="join-section">
