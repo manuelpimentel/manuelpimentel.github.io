@@ -47,7 +47,7 @@ function App() {
       ? "https://www.instagram.com/somos.kau/"
       : "https://www.instagram.com/direct/t/17842961133339953/#";
     window.open(url, "_blank");
-    logButtonClick("contactButton");
+    logButtonClick("Contact");
   };
 
   return (

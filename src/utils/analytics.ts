@@ -14,7 +14,7 @@ export const logPageView = (path: string) => {
 export const logButtonClick = (buttonName: string) => {
   ReactGA.event({
     category: "Button",
-    action: "Click",
+    action: `Click_${buttonName}`,
     label: buttonName,
   });
 };
