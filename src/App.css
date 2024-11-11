@@ -263,6 +263,11 @@ body {
     gap: 2rem; /* Ajustar el espaciado */
   }
 
+  .myImage3 {
+    width: 100%;
+
+  }
+
   .about-text {
     flex: 1;
   }
