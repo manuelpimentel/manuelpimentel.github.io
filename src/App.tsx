@@ -2,6 +2,7 @@ import "./App.css";
 import { useEffect } from "react";
 import TopBar from "./assets/components/UI/TopBar"; // Asegúrate de que la ruta sea correcta
 import myImage from "./assets/images/Roraima.jpg";
+import myImage1 from "./assets/images/KAU.png";
 import myImage2 from "./assets/images/Door.jpeg";
 import myImage3 from "./assets/images/Caballos.jpeg";
 import { FaArrowTrendUp } from "react-icons/fa6";
@@ -55,7 +56,7 @@ function App() {
       <div className="hero">
         <TopBar /> {/* Aquí agregamos el TopBar */}
         <img src={myImage} alt="Fondo" className="hero-image" />
-        <h1 className="hero-text">KAU</h1>
+        <img src={myImage1} alt="Fondo" className="hero-imagetitle" />
       </div>
 
       {/* Resto de los divs */}
@@ -104,6 +105,8 @@ function App() {
         </div>
       </section>
       <div className="second-section">
+        
+
         {/* Tercer div - Valores */}
         <div className="values-section">
           <h2 id="principios" className="section-title">
@@ -113,32 +116,32 @@ function App() {
           <div className="values-grid">
             <div className="value-box">
               <FaArrowTrendUp size={50} className="value-icon" />
-              <h3>#ColaboramosParaCrecer</h3>
-              <p>
+              <h3 id="paragraph4">#ColaboramosParaCrecer</h3>
+              <p id="paragraph1">
                 La colaboración es clave para el éxito. Fomentamos la diversidad
                 de ideas y conexiones con nuestros equipos.
               </p>
             </div>
             <div className="value-box">
               <IoEarthOutline size={50} className="value-icon" />
-              <h3>#SostenibilidadYDesarrollo</h3>
-              <p>
+              <h3 id="paragraph4">#SostenibilidadYDesarrollo</h3>
+              <p id="paragraph1">
                 Fomentamos prácticas responsables que benefician nuestro
                 ambiente y comunidades.
               </p>
             </div>
             <div className="value-box">
               <FaRegUserCircle size={50} className="value-icon" />
-              <h3>#MotivamosLaConfianza</h3>
-              <p>
+              <h3 id="paragraph4">#MotivamosLaConfianza</h3>
+              <p id="paragraph1">
                 Actuamos con claridad e integridad, apoyando el turismo local
                 con un firme compromiso hacia la transparencia.
               </p>
             </div>
             <div className="value-box">
               <GrMapLocation size={50} className="value-icon" />
-              <h3>#TurismoTransformador</h3>
-              <p>
+              <h3 id="paragraph4">#TurismoTransformador</h3>
+              <p id="paragraph1">
                 Creemos en el turismo como fuerza transformadora para el
                 desarrollo de nuestro país y sus comunidades.
               </p>
@@ -151,8 +154,8 @@ function App() {
           <h2>Nuestro propósito y aspiración</h2>
           <div className="mission-vision">
             <div className="mission">
-              <h3>Misión</h3>
-              <p>
+              <h3 id="paragraph4">Misión</h3>
+              <p id="paragraph1">
                 Conectamos esfuerzo y talento local con exploradores que desean
                 descubrir la riqueza cultural y natural de Venezuela. Promovemos
                 turismo sostenible que beneficia a viajeros y alojadores,
@@ -163,8 +166,8 @@ function App() {
               </p>
             </div>
             <div className="vision">
-              <h3>Visión</h3>
-              <p>
+              <h3 id="paragraph4">Visión</h3>
+              <p id="paragraph1">
                 Nos enfocamos en crear conexiones auténticas entre visitantes,
                 encargados y la riqueza natural de Venezuela, brindando
                 experiencias de hospedaje que van más allá de lo tradicional.
@@ -191,7 +194,7 @@ function App() {
             Acompáñanos
           </h2>
           <h3 id="title">Viaja, descubre, crece.</h3>
-          <p>
+          <p id="paragraph1">
             Seguro que has soñado con escapar de la rutina y desconectar junto a
             la naturaleza. ¿Y si existiera una forma muy fácil de lograrlo? 🌴
             <p>
@@ -221,7 +224,7 @@ function App() {
 
       {/* Sexto div - Experiencia */}
       <div className="experience-section">
-        <h2 className="section-title">Sé parte de esta experiencia</h2>
+        <h2 className="section-title-footer">Sé parte de esta experiencia</h2>
         <div className="experience-icons">
           <a
             href="https://www.facebook.com/profile.php?id=61567693736874"

@@ -1,22 +1,26 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./TopBar.css";
 
 interface TopBarProps {}
 
 const TopBar: React.FC<TopBarProps> = () => {
-  useEffect(() => {
-    const link = document.createElement("link");
-    link.href = "https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600&display=swap";
-    link.rel = "stylesheet";
-    document.head.appendChild(link);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const topBarRef = useRef(null);
 
-    return () => {
-      document.head.removeChild(link);
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      setIsScrolled(scrollTop > 0); // Update state based on scroll position
     };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <div className="topBar">
+    <div className={`topBar   
+ ${isScrolled ? "scrolled" : ""}`} ref={topBarRef}>
       <div className="linksContainer">
         {/*<a href="#home">
           <img src="public/logo.svg" alt="Home Icon" className="homeIcon"/>

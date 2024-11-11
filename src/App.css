@@ -32,6 +32,12 @@ body {
   z-index: 1;
 }
 
+.hero-imagetitle{
+  width: 30%;
+  height: auto;
+  z-index: 1;
+}
+
 .hero-text {
   position: absolute;
   top: 30%;
@@ -47,6 +53,18 @@ body {
 .section-title {
   font-size: medium;
   margin: 0;
+  background-color: #dfdfdf;
+  color: black;
+  width:15;
+  height: auto;
+  border-radius: 5rem;
+  padding: 10px; /* Espacio interno */
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.section-title-footer{
+  margin-bottom: 0;
 }
 
 /* TopBar */
@@ -188,6 +206,23 @@ body {
 
 /* Mobile Styles */
 @media (max-width: 767px) {
+
+  .container {
+    max-width: 90%; /* Ajusta el ancho máximo según tus necesidades */
+    margin: 0 auto;
+  }
+
+  .elemento {
+    width: 33.33%; /* Ajusta el ancho para distribuir los elementos de forma equitativa */
+    flex: 0 0 auto; /* Evita que los elementos se estiren más de lo necesario */
+  }
+
+  .hero-imagetitle{
+    width: 60%;
+    height: auto;
+    z-index: 1;
+  }
+
   .hero-text {
     font-size: 8rem; /* Reducir el tamaño de la fuente en móvil */
   }
@@ -245,6 +280,12 @@ body {
     margin: 0 auto;
   }
 
+  .hero-imagetitle{
+    width: 40%;
+    height: auto;
+    z-index: 1;
+  }
+
 
   .about-image {
     width: 100%; /* Ajusta el tamaño de la imagen en móvil */
@@ -278,8 +319,6 @@ body {
     border-radius: 0;
   }
 
-  
-
   .contact-button {
     width: 15rem;
     height: 3rem;
@@ -294,7 +333,7 @@ body {
 /* Desktop Styles */
 @media (min-width: 1025px) {
   .hero {
-    height: 80vh;
+    height: 90vh;
   }
 
   .hero-text {
@@ -337,6 +376,25 @@ body {
     color: black;
   }
 
+  .values-section{
+    margin-left: 12rem;
+    margin-right: 15rem;
+  }
+
+  .values-grid{
+    margin-top: 2rem;
+  }
+
+  .purpose-section{
+    padding-left: 15rem;
+    padding-right: 15rem ;
+  }
+
+  .join-section{
+    margin-left: 15rem;
+    margin-right: 15rem;
+  }
+
   .contact-button {
     width: 15rem;
     height: 3rem;
@@ -365,6 +423,8 @@ body {
   #paragraph5 {
     font-size: x-large;
     text-align: center;
+    margin-top: 3rem;
+    font-weight: bold;
   }
 
   .myImage3 {
@@ -374,5 +434,15 @@ body {
 
   .experience-icons {
     font-size: 2.5rem;
+  }
+
+  .container {
+    max-width: 90%; /* Ajusta el ancho máximo según tus necesidades */
+    margin: 0 auto;
+  }
+
+  .elemento {
+    width: 33.33%; /* Ajusta el ancho para distribuir los elementos de forma equitativa */
+    flex: 0 0 auto; /* Evita que los elementos se estiren más de lo necesario */
   }
 }
