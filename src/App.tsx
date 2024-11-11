@@ -66,13 +66,13 @@ function App() {
         <h2 className="section-title">Nosotros</h2>
         <div className="about-content">
           <div className="about-text">
-            <h3 id="title">Únete a la Comunidad KAU</h3>
+            <h3 id="title">Únete a la Comunidad  <span className="kau-font">KAU</span></h3>
             <p id="paragraph1">
               Descubre <span className="kau-font">KAU</span>, la plataforma que
               conecta viajeros en busca de experiencias auténticas con
               alojamientos únicos en Venezuela.
             </p>
-            <p id="paragraph2">
+            <p id="paragraph1">
               En <span className="kau-font">KAU</span>, queremos dar visibilidad
               a los alojamientos que merecen ser descubiertos, buscando siempre
               crear alianzas que nos permitan
@@ -86,13 +86,13 @@ function App() {
                 #TurismoTransformador.
               </span>
             </p>
-            <p id="paragraph3">
+            <p id="paragraph1">
               ¿Tienes un alojamiento al que quieres dar visibilidad de forma
               gratuita? Proporciona tus datos a continuación y juntos
               impulsaremos el crecimiento de tu negocio, facilitando que mas
               viajeros lleguen a tu puerta.
             </p>
-            <div>
+            <div className="contact-button-container">
               <p id="paragraph4">
                 ¡Únete y forma parte de esta aventura transformadora!
               </p>
@@ -118,7 +118,7 @@ function App() {
           <div className="values-grid">
             <div className="value-box">
               <FaArrowTrendUp size={50} className="value-icon" />
-              <h3 id="paragraph4">#ColaboramosParaCrecer</h3>
+              <h3 id="paragraph">#ColaboramosParaCrecer</h3>
               <p id="paragraph1">
                 La colaboración es clave para el éxito. Fomentamos la diversidad
                 de ideas y conexiones con nuestros equipos.
@@ -126,7 +126,7 @@ function App() {
             </div>
             <div className="value-box">
               <IoEarthOutline size={50} className="value-icon" />
-              <h3 id="paragraph4">#SostenibilidadYDesarrollo</h3>
+              <h3 id="paragraph">#SostenibilidadYDesarrollo</h3>
               <p id="paragraph1">
                 Fomentamos prácticas responsables que benefician nuestro
                 ambiente y comunidades.
@@ -134,7 +134,7 @@ function App() {
             </div>
             <div className="value-box">
               <FaRegUserCircle size={50} className="value-icon" />
-              <h3 id="paragraph4">#MotivamosLaConfianza</h3>
+              <h3 id="paragraph">#MotivamosLaConfianza</h3>
               <p id="paragraph1">
                 Actuamos con claridad e integridad, apoyando el turismo local
                 con un firme compromiso hacia la transparencia.
@@ -142,7 +142,7 @@ function App() {
             </div>
             <div className="value-box">
               <GrMapLocation size={50} className="value-icon" />
-              <h3 id="paragraph4">#TurismoTransformador</h3>
+              <h3 id="paragraph">#TurismoTransformador</h3>
               <p id="paragraph1">
                 Creemos en el turismo como fuerza transformadora para el
                 desarrollo de nuestro país y sus comunidades.
