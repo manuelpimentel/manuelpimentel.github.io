@@ -8,7 +8,7 @@ import myImage3 from "./assets/images/Caballos.jpeg";
 import { FaArrowTrendUp } from "react-icons/fa6";
 import { IoEarthOutline } from "react-icons/io5";
 import { FaRegUserCircle } from "react-icons/fa";
-import { GrMapLocation } from "react-icons/gr";
+import { TbMapSearch } from "react-icons/tb"
 import { FaFacebook } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { FaLinkedin } from "react-icons/fa";
@@ -141,7 +141,7 @@ function App() {
               </p>
             </div>
             <div className="value-box">
-              <GrMapLocation size={50} className="value-icon" />
+              <TbMapSearch size={50} className="value-icon" />
               <h3 id="paragraph">#TurismoTransformador</h3>
               <p id="paragraph1">
                 Creemos en el turismo como fuerza transformadora para el
