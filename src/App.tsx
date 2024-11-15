@@ -160,7 +160,7 @@ function App() {
               <p id="paragraph1">
                 Conectamos esfuerzo y talento local con exploradores que desean
                 descubrir la riqueza cultural y natural de Venezuela. Promovemos
-                turismo sostenible que beneficia a viajeros y provedores de servicios turisticos,
+                turismo sostenible que beneficia a viajeros y proveedores de servicios turísticos,
                 incentivando el desarrollo de comunidades locales, utilizando
                 tecnología de manera eficiente y responsable. Con{" "}
                 <span className="kau-font">KAU</span>, cada reserva es una
