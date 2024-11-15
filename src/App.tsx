@@ -69,7 +69,7 @@ function App() {
             <h3 id="title">Únete a la Comunidad  <span className="kau-font">KAU</span></h3>
             <p id="paragraph1">
               Descubre <span className="kau-font">KAU</span>, la plataforma que
-              conecta viajeros en busca de experiencias auténticas con
+              conecta viajeros del mundo en busca de experiencias auténticas con
               alojamientos únicos en Venezuela.
             </p>
             <p id="paragraph1">
@@ -90,7 +90,7 @@ function App() {
               ¿Tienes un alojamiento al que quieres dar visibilidad de forma
               gratuita? Proporciona tus datos a continuación y juntos
               impulsaremos el crecimiento de tu negocio, facilitando que mas
-              viajeros lleguen a tu puerta.
+              exploradores lleguen a tu puerta.
             </p>
             <div className="contact-button-container">
               <p id="paragraph4">
@@ -160,7 +160,7 @@ function App() {
               <p id="paragraph1">
                 Conectamos esfuerzo y talento local con exploradores que desean
                 descubrir la riqueza cultural y natural de Venezuela. Promovemos
-                turismo sostenible que beneficia a viajeros y alojadores,
+                turismo sostenible que beneficia a viajeros y provedores de servicios turisticos,
                 incentivando el desarrollo de comunidades locales, utilizando
                 tecnología de manera eficiente y responsable. Con{" "}
                 <span className="kau-font">KAU</span>, cada reserva es una
@@ -206,7 +206,7 @@ function App() {
               un pueblo que te abraza como un viejo amigo.
             </p>
             En <span className="kau-font">KAU</span>, queremos conectar a los
-            viajeros con anfitriones que ofrecen más que un simple hospedaje:
+            turistas del mundo con anfitriones que ofrecen más que un simple hospedaje:
             una auténtica experiencia de inmersión en la tierra y su gente.
             <p>
               Cada reserva es una oportunidad para descubrir Venezuela y su
