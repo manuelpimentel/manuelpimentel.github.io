@@ -89,8 +89,8 @@ function App() {
             <p id="paragraph1">
               ¿Tienes un alojamiento al que quieres dar visibilidad de forma
               gratuita? Proporciona tus datos a continuación y juntos
-              impulsaremos el crecimiento de tu negocio, facilitando que mas
-              exploradores lleguen a tu puerta.
+              impulsaremos el crecimiento de tu negocio, facilitando que
+              exploradores de todo el mundo lleguen a tu puerta.
             </p>
             <div className="contact-button-container">
               <p id="paragraph4">
@@ -205,9 +205,8 @@ function App() {
               montañas envueltas en nubes te esperan, junto a la hospitalidad de
               un pueblo que te abraza como un viejo amigo.
             </p>
-            En <span className="kau-font">KAU</span>, queremos conectar a los
-            turistas del mundo con anfitriones que ofrecen más que un simple hospedaje:
-            una auténtica experiencia de inmersión en la tierra y su gente.
+            En <span className="kau-font">KAU</span>, queremos dar la oportunidad a
+            turistas del mundo entero de que conozcan el recurso más valioso del país: nuestra gente.
             <p>
               Cada reserva es una oportunidad para descubrir Venezuela y su
               magia✨🌺 Únete a <span className="kau-font">KAU</span> y sé parte
